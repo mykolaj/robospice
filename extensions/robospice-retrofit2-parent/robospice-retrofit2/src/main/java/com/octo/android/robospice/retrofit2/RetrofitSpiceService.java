@@ -39,7 +39,7 @@ public abstract class RetrofitSpiceService extends SpiceService {
 
     protected abstract Factory createConverterFactory();
 
-    protected final Factory getConverterFactory() {
+    protected Factory getConverterFactory() {
         if (converterFactory == null) {
             converterFactory = createConverterFactory();
         }
@@ -54,7 +54,7 @@ public abstract class RetrofitSpiceService extends SpiceService {
      */
     protected abstract RetrofitResponseConverter createRetrofitToCacheConverter();
 
-    protected final RetrofitResponseConverter getRetrofitToCacheConverter() {
+    protected RetrofitResponseConverter getRetrofitToCacheConverter() {
         if (this.retrofitToCacheConverter == null) {
             this.retrofitToCacheConverter = createRetrofitToCacheConverter();
         }
@@ -81,7 +81,7 @@ public abstract class RetrofitSpiceService extends SpiceService {
         super.addRequest(request, listRequestListener);
     }
 
-    public final List<Class<?>> getRetrofitInterfaceList() {
+    public List<Class<?>> getRetrofitInterfaceList() {
         return retrofitInterfaceList;
     }
 

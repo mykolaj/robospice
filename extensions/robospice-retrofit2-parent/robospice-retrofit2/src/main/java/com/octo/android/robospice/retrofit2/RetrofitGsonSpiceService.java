@@ -26,7 +26,7 @@ public abstract class RetrofitGsonSpiceService extends RetrofitSpiceService {
     }
 
     @Override
-    protected final Factory createConverterFactory() {
+    protected Factory createConverterFactory() {
         return GsonConverterFactory.create();
     }
 

@@ -26,7 +26,7 @@ public abstract class RetrofitJacksonSpiceService extends RetrofitSpiceService {
     }
 
     @Override
-    protected final Factory createConverterFactory() {
+    protected Factory createConverterFactory() {
         return JacksonConverterFactory.create();
     }
 
