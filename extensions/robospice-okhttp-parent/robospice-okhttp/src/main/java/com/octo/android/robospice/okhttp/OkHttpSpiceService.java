@@ -6,7 +6,8 @@ import com.octo.android.robospice.SpiceService;
 import com.octo.android.robospice.request.CachedSpiceRequest;
 import com.octo.android.robospice.request.listener.RequestListener;
 import com.octo.android.robospice.request.okhttp.OkHttpSpiceRequest;
-import com.squareup.okhttp.OkHttpClient;
+import okhttp3.OkHttpClient;
+
 
 public abstract class OkHttpSpiceService extends SpiceService {
 

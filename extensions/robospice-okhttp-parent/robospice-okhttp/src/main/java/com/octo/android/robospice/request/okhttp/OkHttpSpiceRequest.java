@@ -1,7 +1,8 @@
 package com.octo.android.robospice.request.okhttp;
 
 import com.octo.android.robospice.request.SpiceRequest;
-import com.squareup.okhttp.OkHttpClient;
+import okhttp3.OkHttpClient;
+
 
 /**
  * A simplified {@link SpiceRequest} that makes it even easier to use a

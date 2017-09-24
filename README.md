@@ -1,3 +1,13 @@
+## Robospice Retrofit2 module (unofficial)
+In case someone need to use Retrofit2 with RoboSpice take a look at a sample repository [here](https://github.com/mykolaj/Robospice-Retrofit2-sample).
+<p>What you can do is to clone that sample, take '.jar' files from a 'libs' folder from here, and import them into your own project.</p>
+`git clone https://github.com/mykolaj/Robospice-Retrofit2-sample.git`
+<p>That's all for now.</p>
+
+<p/>
+-----------------------
+##Original readme:
+-----------------------
 <img src="https://raw.github.com/stephanenicolas/robospice/master/gfx/Robospice-logo-white-background.png"
 width="250px" />
 
@@ -108,13 +118,13 @@ Alternatives to RoboSpice
 -------------------------
 
 * [Volley](http://www.youtube.com/watch?v=yhv8l9F44qo), and its [source code.](https://android.googlesource.com/platform/frameworks/volley/)
-* [DataDroid](http://www.datadroidlib.com/2012/12/datadroid-v2-is-available)
+* [DataDroid](https://github.com/foxykeep/DataDroid)
 * [REST Provider](https://github.com/novoda/RESTProvider)
 * [REST Droid](https://github.com/PCreations/RESTDroid)
 * [PostMan (rings twice) Lib](https://github.com/fedepaol/PostmanLib--Rings-Twice--Android)
 * [Ion](https://github.com/koush/ion)
 * [droidQuery](http://phil-brown.github.io/droidQuery/)
-* [Android Job Queue](https://github.com/path/android-priority-jobqueue)
+* [Android Job Queue](https://github.com/yigit/android-priority-jobqueue)
 * [Goro](http://stanfy.com/blog/goro-2/)
 	
 Projects related to RoboSpice 

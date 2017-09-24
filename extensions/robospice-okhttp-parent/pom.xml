@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.octo.android.robospice</groupId>
 		<artifactId>robospice-parent</artifactId>
-		<version>1.5.0-SNAPSHOT</version>
+		<version>1.4.14-unofficial</version>
 		<relativePath>../../</relativePath>
 	</parent>
 
@@ -23,7 +23,9 @@
 	</modules>
 
 	<properties>
-		<okhttp.version>1.6.0</okhttp.version>
+		<okhttp.version>3.3.1</okhttp.version>
+                <okhttp-urlconnection.version>3.3.1</okhttp-urlconnection.version>
+                <okio.version>1.9.0</okio.version>
 	</properties>
 
 	<dependencyManagement>
@@ -35,15 +37,20 @@
 			</dependency>
 
 			<dependency>
-				<groupId>com.squareup.okhttp</groupId>
+				<groupId>com.squareup.okhttp3</groupId>
 				<artifactId>okhttp</artifactId>
 				<version>${okhttp.version}</version>
 			</dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp-urlconnection</artifactId>
-                <version>${okhttp.version}</version>
-            </dependency>
+                        <dependency>
+                            <groupId>com.squareup.okhttp3</groupId>
+                            <artifactId>okhttp-urlconnection</artifactId>
+                            <version>${okhttp-urlconnection.version}</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>com.squareup.okio</groupId>
+                            <artifactId>okio</artifactId>
+                            <version>${okio.version}</version>
+                        </dependency>
 		</dependencies>
 	</dependencyManagement>
 

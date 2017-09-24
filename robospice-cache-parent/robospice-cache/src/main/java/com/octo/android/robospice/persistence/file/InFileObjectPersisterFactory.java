@@ -142,6 +142,7 @@ public abstract class InFileObjectPersisterFactory extends ObjectPersisterFactor
             allDeleted = cacheFile.delete() && allDeleted;
         }
         if (allDeleted || cacheFileList.length == 0) {
+            // TODO How does someone should react to this message? List which files exactly could'd be deleted for clarity.
             Ln.d("Some file could not be deleted from cache.");
         }
     }

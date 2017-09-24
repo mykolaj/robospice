@@ -4,6 +4,7 @@ Release notes for RoboSpice
 Version 1.5.0 (planned)
 -------------
 
+* Add a new Robospice-Retrofit2 extension which supports a new Retrofit2 library
 * TODO : finish migrating samples to gradle and release.
 * TODO : inject requests in listeners
 * TODO : inject service in requests

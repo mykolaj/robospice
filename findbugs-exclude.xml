@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+	<Match>
+		<Bug pattern="WMI_WRONG_MAP_ITERATOR" />
+		<Class name="com.octo.android.robospice.SpiceManager" />
+		<Or>
+			<Method name="removeListenersOfCachedRequestToLaunch" />
+			<Method name="removeListenersOfPendingCachedRequest" />
+			<Method name="dontNotifyAnyRequestListenersInternal" />
+			<Method name="removeListenersOfAllPendingCachedRequests" />
+		</Or>
+	</Match>
+</FindBugsFilter>

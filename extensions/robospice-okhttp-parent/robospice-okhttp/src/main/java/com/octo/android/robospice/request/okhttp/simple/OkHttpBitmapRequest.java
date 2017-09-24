@@ -9,7 +9,6 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import com.squareup.okhttp.OkUrlFactory;
 import org.apache.commons.io.IOUtils;
 
 import roboguice.util.temp.Ln;
@@ -19,6 +18,7 @@ import android.graphics.BitmapFactory;
 import com.octo.android.robospice.request.ProgressByteProcessor;
 import com.octo.android.robospice.request.okhttp.OkHttpSpiceRequest;
 import com.octo.android.robospice.request.simple.IBitmapRequest;
+import okhttp3.OkUrlFactory;
 
 /**
  * Downloads big images in size as bitmaps. All data is passed to the listener

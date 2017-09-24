@@ -138,21 +138,31 @@ public abstract class InFileObjectPersister<T> extends ObjectPersister<T> {
 
     @Override
     public void removeAllDataFromCache() {
-        File cacheFolder = getCacheFolder();
-        File[] cacheFileList = cacheFolder.listFiles(new FileFilter() {
+        File folder = getCacheFolder();
+        if (folder == null) {
+            Ln.d("Skip 'removeAllDataFromCache' operation. Cache folder is 'null', so there's"
+                    + " nothing to remove.");
+            return;
+        }
+        File[] cacheFileList = folder.listFiles(new FileFilter() {
 
             @Override
             public boolean accept(File file) {
                 return file.getName().startsWith(getCachePrefix());
             }
         });
-
-        boolean allDeleted = true;
-        for (File cacheFile : cacheFileList) {
-            allDeleted = cacheFile.delete() && allDeleted;
+        if (cacheFileList == null) {
+            Ln.d("Cache is already clear.");
+            return;
         }
-        if (allDeleted || cacheFileList.length == 0) {
-            Ln.d("Some file could not be deleted from cache.");
+        for (File cacheFile : cacheFileList) {
+            // Calm down the 'find-bugs-plugin' which complains about a possible NPE here
+            if (cacheFile == null) {
+                continue;
+            }
+            if (!cacheFile.delete()) {
+                Ln.d("File '" + cacheFile.getName() + "' could not be deleted from cache.");
+            }
         }
     }
 

@@ -1,7 +1,6 @@
 package com.octo.android.robospice.request.okhttp.simple;
 
 import com.octo.android.robospice.request.okhttp.OkHttpSpiceRequest;
-import com.squareup.okhttp.OkUrlFactory;
 import org.apache.commons.io.IOUtils;
 import roboguice.util.temp.Ln;
 
@@ -9,6 +8,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import okhttp3.OkUrlFactory;
 
 public class OkHttpSimpleTextRequest extends OkHttpSpiceRequest<String> {
 

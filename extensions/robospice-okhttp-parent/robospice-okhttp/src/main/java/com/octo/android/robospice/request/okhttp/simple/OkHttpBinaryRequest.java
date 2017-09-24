@@ -6,13 +6,13 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import com.squareup.okhttp.OkUrlFactory;
 import org.apache.commons.io.IOUtils;
 
 import roboguice.util.temp.Ln;
 
 import com.octo.android.robospice.request.ProgressByteProcessor;
 import com.octo.android.robospice.request.okhttp.OkHttpSpiceRequest;
+import okhttp3.OkUrlFactory;
 
 /**
  * Abstract class used to download binaries. See {@link OkHttpSmallBinaryRequest} and
